@@ -38,7 +38,8 @@ public class Main {
                        c.showInforCustomer();
                        break;
                    case 3:
-                       System.out.println("Develop Processing");
+//                       System.out.println("Develop Processing");
+                       c.updateCustomer();
                        break;
                    case 4:
                        System.out.println("Develop Processing");

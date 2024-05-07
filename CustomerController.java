@@ -36,7 +36,7 @@ public class CustomerController {
 
         System.out.println("===============================");
         // Tạo một đối tượng có thông tin nhập vào
-        Customer customer = new Customer(id,firstName,lastName,address,email,phone);
+        Customer customer = new Customer();
         customer.setId(id);
         customer.setFirstName(firstName);
         customer.setLastName(lastName);
@@ -81,5 +81,28 @@ public class CustomerController {
     }
 
 //    4. cho phép thay đổi
+public void updateCustomer(){
 
+    System.out.println("Update Customer Information : ");
+    System.out.println("------------------------------");
+    for(Customer customer : customers){
+        if(customer.getId() == customers.get(customers.size()-1).getId()){
+            System.out.println("Update Customer ID : " + customer.getId());
+            customer.setId(customer.getId());
+            System.out.println("Update First Name: " + customer.getFirstName());
+            customer.setFirstName(sc.nextLine());
+            System.out.println("Update Last Name: " + customer.getLastName());
+            customer.setLastName(sc.nextLine());
+            System.out.println("Update Email: " + customer.getEmail());
+            customer.setEmail(sc.nextLine());
+            System.out.println("Update Phone: " + customer.getPhone());
+            customer.setPhone(sc.nextLine());
+
+            System.out.println("Update Successful ");
+            System.out.println("======================================= ");
+
+
+        }
+    }
+}
 }

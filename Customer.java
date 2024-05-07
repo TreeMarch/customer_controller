@@ -14,14 +14,18 @@ public class Customer {
 
     //nếu không có yêu cầu gì đặc biệt thì không nhất thiết phải có Constructor
     //ngược lại sẽ cần và cho tham số truyền vào
-    public Customer(long id, String address, String firstName, String lastName, String email, String phone) {
-        this.id = id;
-        this.address = address;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.phone = phone;
-    }
+//    public Customer(long id, String address, String firstName, String lastName, String email, String phone) {
+//        this.id = id;
+//        this.address = address;
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        this.email = email;
+//        this.phone = phone;
+//    }
+
+        public Customer() {
+
+        }
 
         public long getId() {
             return id;
